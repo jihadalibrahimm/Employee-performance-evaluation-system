@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+}
+body{
+    background-color: #ced7e7;
+}
+.container{
+    width: 50%;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    border-radius: 15px;
+}
+
+.topContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxContent{
+    background-color: #ffffff;
+    padding: 25px 0;
+    border-radius: 10px;
+}
+.boxContent .items{
+    display: grid;
+    grid-template-areas: 
+    "Productivity Commitment"
+    "Teamwork Average";
+    gap: 20px;
+    row-gap: 10px;
+    padding: 0 10px;
+}
+
+.boxContent .items .item{
+    padding: 15px;
+    border-radius: 5px;
+    color: rgb(58, 58, 58);
+    background-color: #e6e9ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+.items .item b{
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+.boxContent .result{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.result .item1{
+    background-color: #3498db;
+    padding: 20px 0;
+    margin: auto;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    gap: 0;
+}
+.item1 span{
+    color: white;
+}
+.item1 span:last-child{
+    font-size: 1.5rem;
+}
